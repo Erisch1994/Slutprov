@@ -7,13 +7,11 @@ public class Steps : MonoBehaviour
     public GameObject footstep;
     private bool isWalking;
 
-    // Start is called before the first frame update
     void Start()
     {
         footstep.SetActive(false);
     }
 
-    // Update is called once per frame
     void Update()
     {
         HandleFootstepsInput();
@@ -42,12 +40,11 @@ public class Steps : MonoBehaviour
     void footsteps()
     {
         footstep.SetActive(true);
-        // Play your audio source here
     }
 
     void StopFootsteps()
     {
         footstep.SetActive(false);
-        // Stop your audio source here
+
     }
 }
