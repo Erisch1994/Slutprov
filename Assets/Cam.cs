@@ -9,9 +9,15 @@ public class Cam : MonoBehaviour
     public Transform player;
     private bool isInteractionPanelActive = false;
 
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
     void Update()
     {
-        Cursor.visible = false;
+        //Cursor.visible = false;
 
         if (!isInteractionPanelActive)
         {

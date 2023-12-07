@@ -16,6 +16,8 @@ public class Mushrooom : MonoBehaviour
 
     void Start()
     {
+        //Cursor.lockState = CursorLockMode.None;
+        //Cursor.visible = true;
         playerCamera = Camera.main;
 
 
@@ -66,6 +68,8 @@ public class Mushrooom : MonoBehaviour
 
     void ShowInteractionPanel()
     {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
 
         Time.timeScale = 0f;
 
@@ -78,7 +82,8 @@ public class Mushrooom : MonoBehaviour
 
     void CloseInteractionPanel()
     {
-
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         Time.timeScale = 1f;
 
 
